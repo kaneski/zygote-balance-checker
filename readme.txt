@@ -14,7 +14,8 @@
 # Batch Insert
 # input file should have <mobile_number-asset-code> format
 # e.g (9171234567-ABC-1234)
-  $ ./batch_insert.sh <input_file> <database_file> <account_name>
+# device_model_id (1 for AVL, 2 for Totemtek)
+  $ ./batch_insert.sh <input_file> <database_file> <account_name> <device_model_id>
 
 
 # Troubleshooting
