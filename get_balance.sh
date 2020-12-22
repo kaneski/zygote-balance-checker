@@ -2,7 +2,7 @@
 modem_index=$1
 mobile_number=$2
 ussd_number="*143#"
-balance_threshold=11
+balance_threshold=1000
 
 mmcli -m "$modem_index" --3gpp-ussd-cancel 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-initiate="$ussd_number" 1>/dev/null
