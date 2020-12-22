@@ -5,7 +5,7 @@ Easily check your device(s) SIM balance.
     $ sudo apt install modemmanager
     $ sudo apt install sqlite3
 
-### Check modem index
+### Get modem index
 
     $ mmcli -L
 
@@ -35,8 +35,8 @@ Example:
 #### Batch Insert
 `device_model_id` could either be:
 
-1 - AVL5
-2 - Totemtek
+      1 - AVL5
+      2 - Totemtek
 
 See `db.sql`
 
