@@ -41,7 +41,7 @@ Example:
 
 See `db.sql`
 
-    ./batch_insert.sh <input_file> <database_file> <account_name> <device_model_id>
+    $ ./batch_insert.sh <input_file> <database_file> <account_name> <device_model_id>
 
 ## Troubleshooting
 
