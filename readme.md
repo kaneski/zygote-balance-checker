@@ -16,8 +16,9 @@ Easily check your device(s) SIM balance.
 ## Usage
 
 ### Get balance per device
+Default `get_balance.sh` balance threshold is 1000
 
-    $ ./get_balance <modem_index> <mobile_number>
+    $ ./get_balance.sh <modem_index> <mobile_number>
 
 ### Get balance of all device in sqlite database
 
@@ -29,8 +30,8 @@ Input file should contain lines in `mobile_number-asset_code` format separated b
 
 Example:
 
-    9171234567-ABC-123
-    9177654321-CBA-321
+      9171234567-ABC-123
+      9177654321-CBA-321
 
 #### Batch Insert
 `device_model_id` could either be:
