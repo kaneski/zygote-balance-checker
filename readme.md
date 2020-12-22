@@ -5,7 +5,7 @@ Easily check your device(s) SIM balance.
     $ sudo apt install modemmanager
     $ sudo apt install sqlite3
 
-### Check for modem index
+### Check modem index
 
     $ mmcli -L
 
@@ -23,10 +23,10 @@ Easily check your device(s) SIM balance.
 
     $ ./get_balance_all.sh <modem_index> <sqlite.db> 1>balance-report-$(date +"%Y-%m-%d").csv 2>/dev/null
 
-### Inserting data to database
+### Insert data to database
 #### Input File Format
-Input file should contain lines in `mobile_number-asset_code` format separated by a Linux new line character.  Use only 10 digits for mobile numbers
-.
+Input file should contain lines in `mobile_number-asset_code` format separated by a Linux new line character.  Use only 10 digits for mobile numbers.
+
 Example:
 
     9171234567-ABC-123
