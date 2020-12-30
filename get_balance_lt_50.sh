@@ -1,9 +1,10 @@
 #!/usr/bin/bash
-modem_index=$1
-mobile_number=$2
+modem_index=$(mmcli -L | cut -d'/' -f6 | cut -d' ' -f1)
+mobile_number=$1
 ussd_number="*143#"
 balance_threshold=50
 
+mmcli -m "$modem_index" -e 1>/dev/null 2>&1
 mmcli -m "$modem_index" --3gpp-ussd-cancel 1>/dev/null 2>&1
 mmcli -m "$modem_index" --3gpp-ussd-initiate="$ussd_number" 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-respond="0" 1>/dev/null

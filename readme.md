@@ -18,11 +18,11 @@ Easily check your device(s) SIM balance.
 ### Get balance per device
 Default `get_balance.sh` balance threshold is 1000
 
-    $ ./get_balance.sh <modem_index> <mobile_number>
+    $ ./get_balance.sh <mobile_number>
 
 ### Get balance of all device in sqlite database
 
-    $ ./get_balance_all.sh <modem_index> <sqlite.db> 1>balance-report-$(date +"%Y-%m-%d").csv 2>/dev/null
+    $ ./get_balance_all.sh <sqlite.db> 1>balance-report-$(date +"%Y-%m-%d").csv 2>/dev/null
 
 ### Insert data to database
 #### Input File Format
@@ -42,6 +42,9 @@ Example:
 See `db.sql`
 
     $ ./batch_insert.sh <input_file> <database_file> <account_name> <device_model_id>
+
+### Sort Output File
+    $ sort -g -t ',' -k2 output_file.csv
 
 ## Troubleshooting
 
