@@ -45,6 +45,7 @@ See `db.sql`
 
 ### Sort Output File
     $ sort -g -t ',' -k2 output_file.csv
+    $ sort -g -t ',' -k2 report/today.csv | uniq | grep '^[0-9]\{10\}'
 
 ## Troubleshooting
 
