@@ -24,6 +24,11 @@ Default `get_balance.sh` balance threshold is 1000
 
     $ ./get_balance_all.sh <sqlite.db> 1>balance-report-$(date +"%Y-%m-%d").csv 2>/dev/null
 
+### Filter output file
+Only show lines that has a balance less than the `input_balance`
+
+    $ ./filter.sh <input_balance> <path_to_file>
+
 ### Insert data to database
 #### Input File Format
 Input file should contain lines in `mobile_number-asset_code` format separated by a Linux new line character.  Use only 10 digits for mobile numbers.
