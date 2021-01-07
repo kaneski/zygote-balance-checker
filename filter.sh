@@ -1,3 +1,5 @@
+#!/bin/bash
+
 balance_threshold=$1
 
 echo "mobile_number,balance,valid_until,asset_code,account_name,device_model_id"
@@ -11,3 +13,4 @@ while read line; do
 		echo $line	
 	fi
 done < $2
+
