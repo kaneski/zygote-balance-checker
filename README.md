@@ -4,6 +4,8 @@ Easily check your device(s) SIM balance.
 
     $ sudo apt install modemmanager
     $ sudo apt install sqlite3
+    $ sudo apt install usb-modeswitch
+    $ sudo systemctl enable ModemManager.service
 
 ### Get modem index
 
