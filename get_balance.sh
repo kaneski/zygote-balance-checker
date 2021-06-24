@@ -8,7 +8,7 @@ mmcli -m "$modem_index" -e 1>/dev/null 2>&1
 mmcli -m "$modem_index" --3gpp-ussd-cancel 1>/dev/null 2>&1
 mmcli -m "$modem_index" --3gpp-ussd-initiate="$ussd_number" 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-respond="0" 1>/dev/null
-mmcli -m "$modem_index" --3gpp-ussd-respond="5" 1>/dev/null
+mmcli -m "$modem_index" --3gpp-ussd-respond="6" 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-respond="1" 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-respond="1" 1>/dev/null
 mmcli -m "$modem_index" --3gpp-ussd-respond="$mobile_number" 1>/dev/null
